@@ -6,4 +6,4 @@ This is an AI centric version of my resume intended to demonstrate my personal e
 ![Resume Screenshot](/resume_preview.png)
 
 ### License
-Format is MIT but the data is owned by Md. Rayed Bin Wahed
+Format is MIT but the data is owned by Md. Rayed Bin Wahed.
