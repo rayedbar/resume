@@ -1,6 +1,6 @@
 ### Motivation
 
-This is an AI centric version of my resume intended to demonstrate my personal efforts in the field over the last year.
+Resume outlining my professional and personal accomplishments over the last couple of years or so.
 
 ### Preview
 ![Resume Screenshot](/rayed_bin_wahed_resume_preview.png)
