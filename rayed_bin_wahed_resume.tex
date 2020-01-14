@@ -85,11 +85,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {BRAC University}{Dhaka, Bangladesh}
-      {Bachelor of Science in Computer Science}{Jan 2012 -- Aug 2016}
-      \resumeItemListStart
-      	\resumeItem{CGPA}{3.75/4.00 (Dean's List).}
-      	\resumeItem{Recipient}{Merit Based Scholarship for the duration of the entire program.}
-      \resumeItemListEnd
+      {Bachelor of Science in Computer Science; CGPA: 3.75}{Jan 2012 - Aug 2016}
+  \resumeSubheading
+      {Udacity}{Dhaka, Bangladesh}
+      {Machine Learning Engineer Nanodegree}{Nov 2019 - Present}
   \resumeSubHeadingListEnd
 
 
@@ -98,34 +97,30 @@
   \resumeSubHeadingListStart
 	\resumeSubheading
       {Therap (BD) Ltd.}{Dhaka, Bangladesh}
-      {Software Engineer II, Machine Learning}{Oct 2019 - Present}
+      {Machine Learning Engineer}{Oct 2019 - Present}
       \resumeItemListStart
-		\resumeItem{Responsibilities}{
+		\resumeItem{Responsibilities}{ 
 			\begin{itemize}
-				\item Lead the newly established Machine Learning department.
-				\item Create a team from the ground up by hiring and training new talent.
-				\item Explore the business potential in the analysis and inference of real-time time-series sensor data received through IoT devices.
-				\item Experience gathering and creating reliable datasets with the help of services like Amazon Ground Truth.
-				\item Experience cleaning, processing, and visualizing data for insight and interpretability by leveraging the rich ecosystem of Python open-source data science packages like Pandas and Numpy.
-				\item Experience training, tuning and deploying models for batch and real-time inference using cloud services provided by AWS and GCP.
-				\item Experience monitoring, optimizing, and updating models with zero down-time.
+				\item Lead the newly established Machine Learning team.
+				\item Working on Human Activity Recognition (HAR) from triaxial accelerometer and gyroscope data received from smartwatches.
+				\item Exploring Machine Learning backed solutions to problems in the Intellectual and Developmental Disability (I/DD) space. 
 			\end{itemize}
 		}      
 		
         \resumeItem{Related Technologies}
-          {Python, Numpy, Pandas, Matplotlib, Seaborn, Scikit-Learn, Keras, TensorFlow, PyTorch, Amazon SageMaker, Google Cloud AI Platform}
+          {Python, Numpy, Pandas, Matplotlib, Seaborn, Scikit-Learn, Keras, TensorFlow, PyTorch, Amazon SageMaker, Google Cloud AI Platform.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Therap (BD) Ltd.}{Dhaka, Bangladesh}
-      {Software Engineer, Full Stack Web Development}{Oct 2016 - Sep 2019}
+      {Software Engineer}{Oct 2016 - Sep 2019}
       \resumeItemListStart
 		\resumeItem{Responsibilities}{
 			\begin{itemize}
-				\item Experience developing and maintaining Java EE, SaaS applications.
+				\item Experience developing and maintaining Java EE and SaaS applications.
 				\item Strong understanding of Object Oriented Programming, Design Patterns, Data Structures, and Algorithms. 
 				\item Thorough understanding of RDBMS and a demonstrated ability in database design.
-				\item Extensive experience working with Oracle WebLogic Server, Oracle Database and other Oracle Enterprise tools.
+				\item Experience working with Oracle WebLogic Server, Oracle Database and other Oracle Enterprise tools.
 				\item Experience in Agile software development methodologies and Test Driven Development.
 				\item Experience with Version Control Systems such as Git, Github, and Bitbucket.
 				\item Experience with dependency management and build tools such as Ant, Maven, and Gradle.
@@ -145,7 +140,7 @@
        \resumeItem{Data Structures and Discrete Mathematics}{
 			\begin{itemize}
 				\item Grade quizzes.
-				\item Provid one-to-one consultations and exam hall invigilation.
+				\item Provide one-to-one consultations.
 				\item Assemble and distribute supplementary study materials.
 			\end{itemize}
 	 	}
@@ -156,52 +151,51 @@
 %-----------Projects-----------------
 \section{Projects}
 	\resumeSubHeadingListStart
+	
 		\resumeSubheading
-			{IMDB Sentiment Analysis Web App}{Dhaka, Bangladesh}
-			{Amazon SageMaker Demonstration}{Dec 2019}
+		{Plagiarism Detection}{Dhaka, Bangladesh}
+		{Detect plagiarized text}{Dec 2019}
+		\resumeItemListStart
+			\resumeItem{Particulars}{
+				\begin{itemize}
+				    \item Examine a text file and perform binary classification. Identifies whether the text is plagiarized depending on how similar it is to a provided source text.
+				    \item As a measure of similarity, calculate Containment and Longest Common Subsequence (LCS) features suggested by the relevant paper.
+				    \item Train and deploy a Scikit-Learn SVC model using the Amazon SageMaker managed environment.
+				\end{itemize}									
+			}
+		\resumeItemListEnd
+	
+		\resumeSubheading
+			{Sentiment Analysis Web App}{Dhaka, Bangladesh}
+			{Classify a movie review as positive or negative}{Dec 2019}
 			\resumeItemListStart
 				\resumeItem{Particulars}{
 					\begin{itemize}
-						\item Train and deploy a custom Pytorch LSTM model in Amazon SageMake.
-						\item Create a AWS Lambda function that invokes the model's inference endpoint.
-						\item Create a Amazon API Gateway that calls the lambda function upon a HTTP POST request passing in the user review and returning back the prediction.
+					    \item Use the IMDB Movie Reviews dataset to train a custom PyTorch LSTM model.
+						\item Deploy the model in Amazon SageMaker and expose a public REST endpoint with the help of AWS Lambda functions and Amazon API Gateway for real-time prediction.
 						\item \href{https://github.com/rayedbar/imdb-sentiment-analysis-sagemaker-app}{Link to Github}
 					\end{itemize}									
 				}
 			\resumeItemListEnd		
 	
 		\resumeSubheading
-			{We Are X, A Customer Service Provider Firm}{Dhaka, Bangladesh}
-			{Machine Learning Engineer (Contractual, Remote)}{Oct 2018 - Mar 2019}
+			{Online Customer Query Classification}{Dhaka, Bangladesh}
+			{Multi-class, multi-label text classification for We Are X}{Oct 2018 - Mar 2019}
 			\resumeItemListStart
-				\resumeItem{Customer Query Classification}{
+				\resumeItem{Particulars}{
 					\begin{itemize}
-						\item Train a tf.Estimator model capable of classifying customer queries into 9 categories.
-						\item Deploy the model in Google Cloud ML Engine.
-						\item Expose REST endpoint for real-time inference.
-					\end{itemize}
-				}
-				
-				\resumeItem{Outcome}{
-					\begin{itemize}
-						\item X was finding it difficult to scale to the growing number of customer queries by hiring and training new customer service representatives.
-						\item My AI system improved existing customer service representative throughput by 3x allowing X to meet market demand keeping existing infrastructure intact.
-						\item Currently X is thinking of ways to integrate the system more deeply into their workflow.
+						\item We Are X provides online customer service support for large corporations and their customers. 
+						\item They were finding it difficult to scale to the growing number of customer queries.
+						\item So I trained a TensorFlow Estimator model in Google Cloud ML Engine capable of classifying 9 categories of customer queries written in English and Bengali and served it using TensorFlow Serving for fast, concurrent usage.
+						\item This improved existing customer service representative throughput by 3x allowing them to meet market demand keeping existing infrastructure intact.
 					\end{itemize}
 				}
 			\resumeItemListEnd			
 	\resumeSubHeadingListEnd
 
 %-----------Deep Learning-----------------
-\section{Courses and Certificates}
+\section{Achievements}
   \resumeSubHeadingListStart
-
-      \resumeSubheading
-      {Machine Learning Engineer Nanodegree}{}
-      {Udacity}{Nov 2019 - Present}
-      \resumeItemListStart
-      	\resumeItem{Ongoing}{\href{https://github.com/rayedbar/imdb-sentiment-analysis-sagemaker-app}{Link to Github.}}
-      \resumeItemListEnd
 
       \resumeSubheading
       {Machine Learning with TensorFlow on Google Cloud Platform Specialization}{}
