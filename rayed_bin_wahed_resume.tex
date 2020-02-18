@@ -75,7 +75,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://linkedin.com/in/rayedbw}{\Large Md. Rayed Bin Wahed}} & Email:  \href{mailto:raye@rayanalytics.org}{raye@rayanalytics.org}\\
+  \textbf{\href{https://linkedin.com/in/rayedbw}{\Large Md. Rayed Bin Wahed}} & Email:  \href{mailto:rayed@rayanalytics.org}{rayed@rayanalytics.org}\\
   \href{https://linkedin.com/in/rayedbw}{\faLinkedinSquare} \href{https://github.com/rayedbar/}{\faGithub} \href{https://twitter.com/rayedbw}{\faTwitter} & Mobile: (+880) 1774882517\\
 \end{tabular*}
 
@@ -85,10 +85,18 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {BRAC University}{Dhaka, Bangladesh}
-      {Bachelor of Science in Computer Science; CGPA: 3.75}{Jan 2012 - Aug 2016}
-  \resumeSubheading
+      {Bachelor of Science in Computer Science}{Jan 2012 - Aug 2016}
+      \resumeItemListStart
+      	\resumeItem{CGPA}{3.75/4.00 (Dean's List).}
+      	\resumeItem{Recipient}{Merit Based Scholarship for the duration of the entire program.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
       {Udacity}{Dhaka, Bangladesh}
-      {Machine Learning Engineer Nanodegree}{Nov 2019 - Present}
+      {Machine Learning Engineer Nanodegree}{Nov 2019 - Feb 2020}
+      \resumeItemListStart
+      	\resumeItem{Capstone Project}{Implemented a LSTM model with 1D Convolution to accurately predict human Activities of Daily Living using the WISDM accelerometer and gyroscope dataset. Sponsored by my employer, the successful demonstration of this project paved the way to new business opportunities and a stronger product portfolio.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -97,13 +105,13 @@
   \resumeSubHeadingListStart
 	\resumeSubheading
       {Therap (BD) Ltd.}{Dhaka, Bangladesh}
-      {Machine Learning Engineer}{Oct 2019 - Present}
+      {Software Engineer II, Machine Learning}{Oct 2019 - Present}
       \resumeItemListStart
 		\resumeItem{Responsibilities}{ 
 			\begin{itemize}
-				\item Lead the newly established Machine Learning team.
-				\item Working on Human Activity Recognition (HAR) from triaxial accelerometer and gyroscope data received from smartwatches.
-				\item Exploring Machine Learning backed solutions to problems in the Intellectual and Developmental Disability (I/DD) space. 
+				\item Lead the Machine Learning team.
+				\item Created a team from the ground up by scouting, hiring, and training new talent.
+				\item Trained a LSTM model to predict 5 Activities of Daily Living using accelerometer and gyroscope sensor data which led to the successful signing of two contracts, one with Garmin and another with Oracle Cloud. This greatly enhanced Therap's ability to serve its customers provide better healthcare.
 			\end{itemize}
 		}      
 		
@@ -113,25 +121,30 @@
 
     \resumeSubheading
       {Therap (BD) Ltd.}{Dhaka, Bangladesh}
-      {Software Engineer}{Oct 2016 - Sep 2019}
+      {Software Engineer, Full Stack Web Development}{Oct 2016 - Sep 2019}
       \resumeItemListStart
 		\resumeItem{Responsibilities}{
 			\begin{itemize}
-				\item Experience developing and maintaining Java EE and SaaS applications.
-				\item Strong understanding of Object Oriented Programming, Design Patterns, Data Structures, and Algorithms. 
-				\item Thorough understanding of RDBMS and a demonstrated ability in database design.
-				\item Experience working with Oracle WebLogic Server, Oracle Database and other Oracle Enterprise tools.
-				\item Experience in Agile software development methodologies and Test Driven Development.
-				\item Experience with Version Control Systems such as Git, Github, and Bitbucket.
-				\item Experience with dependency management and build tools such as Ant, Maven, and Gradle.
-				\item Adept at configuring and deploying applications in Unix-like systems.
-				\item Expertise in HTML, CSS, Javascript and its many libraries.
+				\item Implemented various application modules from scratch, writing the backend, frontend, and database schema. This made Therap more competitive in terms of the number of features it offered allowing it to secure multiple State contracts. 
+				\item Reimplemented numerous older modules making them more performant, resilient and secure. This optimization improved server response time by 2x making pages load faster and more responsive.
+				\item Implemented a multi-select drop-down JQuery widget with application specific customizations. This improved existing code greatly in terms of extensibility and functionality. Its ease of use and clarity of design led to widespread adoption internally by other software development teams.
 			\end{itemize}			
 		}      
 		
         \resumeItem{Related Technologies}
-          {Spring MVC, Hibernate ORM, SQL, Bash}
+          {Java, JSP, Spring MVC, Hibernate ORM, PL/SQL, JavaScript, HTML, CSS, Gradle, Bash, Linux}
       \resumeItemListEnd
+      
+		 \resumeSubheading
+			{We Are X}{Dhaka, Bangladesh}
+			{Machine Learning Consultant (Contractual, Remote)}{Oct 2018 - Mar 2019}
+			\resumeItemListStart
+				\resumeItem{Responsibilities}{
+					\begin{itemize}
+						\item Implemented a text classification model that could classify customer queries written in Bengali and English. This improved existing customer service representative productivity by 3x allowing We Are X to meet market demand, keeping existing infrastructure intact.
+					\end{itemize}
+				}
+		\resumeItemListEnd			      
       
    \resumeSubheading
      {BRAC University}{Dhaka, Bangladesh}
@@ -139,64 +152,17 @@
       \resumeItemListStart
        \resumeItem{Data Structures and Discrete Mathematics}{
 			\begin{itemize}
-				\item Grade quizzes.
-				\item Provide one-to-one consultations.
-				\item Assemble and distribute supplementary study materials.
+				\item Graded quizzes.
+				\item Provided one-to-one consultations and exam room invigilation.
 			\end{itemize}
 	 	}
-	 	
-      \resumeItemListEnd        
+    \resumeItemListEnd
+        
   \resumeSubHeadingListEnd
 
-%-----------Projects-----------------
-\section{Projects}
-	\resumeSubHeadingListStart
-	
-		\resumeSubheading
-		{Plagiarism Detection}{Dhaka, Bangladesh}
-		{Detect plagiarized text}{Dec 2019}
-		\resumeItemListStart
-			\resumeItem{Particulars}{
-				\begin{itemize}
-				    \item Examine a text file and perform binary classification. Identifies whether the text is plagiarized depending on how similar it is to a provided source text.
-				    \item As a measure of similarity, calculate Containment and Longest Common Subsequence (LCS) features suggested by the relevant paper.
-				    \item Train and deploy a Scikit-Learn SVC model using the Amazon SageMaker managed environment.
-				\end{itemize}									
-			}
-		\resumeItemListEnd
-	
-		\resumeSubheading
-			{Sentiment Analysis Web App}{Dhaka, Bangladesh}
-			{Classify a movie review as positive or negative}{Dec 2019}
-			\resumeItemListStart
-				\resumeItem{Particulars}{
-					\begin{itemize}
-					    \item Use the IMDB Movie Reviews dataset to train a custom PyTorch LSTM model.
-						\item Deploy the model in Amazon SageMaker and expose a public REST endpoint with the help of AWS Lambda functions and Amazon API Gateway for real-time prediction.
-						\item \href{https://github.com/rayedbar/imdb-sentiment-analysis-sagemaker-app}{Link to Github}
-					\end{itemize}									
-				}
-			\resumeItemListEnd		
-	
-		\resumeSubheading
-			{Online Customer Query Classification}{Dhaka, Bangladesh}
-			{Multi-class, multi-label text classification for We Are X}{Oct 2018 - Mar 2019}
-			\resumeItemListStart
-				\resumeItem{Particulars}{
-					\begin{itemize}
-						\item We Are X provides online customer service support for large corporations and their customers. 
-						\item They were finding it difficult to scale to the growing number of customer queries.
-						\item So I trained a TensorFlow Estimator model in Google Cloud ML Engine capable of classifying 9 categories of customer queries written in English and Bengali and served it using TensorFlow Serving for fast, concurrent usage.
-						\item This improved existing customer service representative throughput by 3x allowing them to meet market demand keeping existing infrastructure intact.
-					\end{itemize}
-				}
-			\resumeItemListEnd			
-	\resumeSubHeadingListEnd
-
 %-----------Deep Learning-----------------
-\section{Achievements}
+\section{Certificates}
   \resumeSubHeadingListStart
-
       \resumeSubheading
       {Machine Learning with TensorFlow on Google Cloud Platform Specialization}{}
       {Google Cloud Authorized Online Training}{}
