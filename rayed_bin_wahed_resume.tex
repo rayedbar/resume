@@ -13,9 +13,10 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-%\usepackage[pdftex]{hyperref}
-\usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
 \usepackage{fontawesome}
 
 \pagestyle{fancy}
@@ -52,9 +53,15 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -67,9 +74,8 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
@@ -91,6 +97,12 @@
       	\resumeItem{Merit Based Scholarship}{Awarded Merit Based Scholarship for the duration of the entire program.}
       	\resumeItem{Teacher Assistant}{Worked part-time as a TA for Data Structures and Discrete Mathematics starting junior year.}
       \resumeItemListEnd
+    \resumeSubheading
+      {Machine Learning Nanodegree}{Dhaka, Bangladesh}
+      {Udacity}{Nov 2019 - Jan 2020}
+      \resumeItemListStart
+      	\resumeItem{Certificate earned on January 30, 2020}{\href{https://graduation.udacity.com/confirm/9A9CA4SC}{Link to Certificate.}}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -105,7 +117,7 @@
 			\begin{itemize}
 				\item Established a machine learning team from the ground up by recruiting and training fresh university graduates to prototype new business initiatives and enhance our core service. Currently leading a team of 4 engineers.
 				\item Implemented a fall detection system using an LSTM neural network and accelerometer and gyroscope sensor data. Our system alerts a caregiver when an IDD (Intellectual and Development Disability) patient has a fall event allowing the caregiver to attend to the patient approximately 3 times faster.
-				\item Implemented a HAR (Human Activity Recognition) system using an LSTM neural network with a 1D Convolution head and accelerometer and gyroscope sensor data. Recording a patient's daily activities was a big challenge since it required a caregiver to continuously monitor the patient and manually enter the data. Our system automated that process and significantly improved both its speed and accuracy.
+				\item Implemented a HAR (Human Activity Recognition) system using an LSTM neural network with a 1D Convolution head and accelerometer and gyroscope sensor data. Recording a patient's daily activities was a big challenge since it requires a caregiver to continuously monitor the patient and manually enter the data. Our system automated that process and significantly improved both its speed and accuracy.
 				\item Implemented an object detection system by fine-tuning the Detectron2 CNN model to detect sharp and blunt objects such as knives and baseball bats respectively. Once fully integrated with the care facilities' surveillance system, we hope to completely eliminate injurious incidents caused by patients using stray objects to inflict pain.
 			\end{itemize}
 				
@@ -147,12 +159,7 @@
 %-----------Certificates-----------------
 \section{Certificates}
   \resumeSubHeadingListStart
-	\resumeSubheading
-      {Machine Learning Nanodegree}{}
-      {Udacity}{}
-      \resumeItemListStart
-      	\resumeItem{Certificate earned on January 30, 2020}{\href{https://graduation.udacity.com/confirm/9A9CA4SC}{Link to Certificate.}}
-      \resumeItemListEnd      
+      
   
       \resumeSubheading
       {Machine Learning with TensorFlow on Google Cloud Platform Specialization}{}
@@ -185,19 +192,43 @@
           
  \resumeSubHeadingListEnd
 
+
+%-----------AWARDS AND HONORS-----------------
+\section{Awards and Honors}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {President's Volunteer Service Award}{USA}
+      {President's Council on Service and Civic Participation}{Aug 2008}
+      \resumeItemListStart
+      	\resumeItem{Recognition}{Awarded President's Volunteer Service Award from the President's Council on Service and Civic Participation for outstanding service to community and country.}
+      \resumeItemListEnd 
+    \resumeSubheading
+      {Youth Exchange and Study (YES) Program}{Seattle, USA}
+      {Aspect Foundation}{Aug 2007 - Sep 2008}
+      \resumeItemListStart
+      	\resumeItem{Recognition}{One of twenty students selected from Bangladesh to complete the US Department of State funded Youth Exchange and Study Program. As a part of this scholarship, I lived in an American household, attended high school, and learned to appreciate differences in cultural values and the intrinsic qualities that ties us all together.}
+      \resumeItemListEnd 
+           \resumeSubheading
+      {International School Cricket Premier League}{Lucknow, India}
+      {ISCPL}{Jan 2011 }
+      \resumeItemListStart
+      	\resumeItem{Recognition}{Represented Bangladesh as a cricketer in the first ever International School Cricket Premier League organized by City Montessori School \& Degree College and sponsored by the International Cricket Council (ICC).}
+      \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+
 %-------------------------------------------
 
-\section{Hobbies and Interests}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-      {Things that make me, me!}{}
-      {When I'm not hacking away at code or ripping my hair off because of it, this is what I'm most likely doing}{}
-      \resumeItemListStart
-      	\resumeItem{Music}{Playing a tune on my guitar is one of my most desired and uplifting of activities. It always puts a smile on my face and gives me the energy to go take another crack at that pesky little bug.}
-      	\resumeItem{Yoga}{Ever since I've been introduced to the art and science of Kriya Yoga my life has changed by order of magnitudes. It gives me profound clarity of thought and mind, and guides me in ways I can't explain. I highly recommend that you give it a shot if you haven't. You can thank me later.}
-      	\resumeItem{Reading}{I read a lot. Like really, a lot. From books, articles, blogs, to technical documentation, a large part of my day in centered on reading. Two of my all-time favorite non-fiction books and a must read for everyone on earth are: The Sapiens and The Selfish Gene.}
-      \resumeItemListEnd    
- \resumeSubHeadingListEnd
+%\section{Hobbies and Interests}
+%  \resumeSubHeadingListStart
+%      \resumeSubheading
+%      {Things that make me, me!}{}
+%      {When I'm not hacking away at code or ripping my hair off because of it, this is what I'm most likely doing}{}
+%      \resumeItemListStart
+%      	\resumeItem{Music}{Playing a tune on my guitar is one of my most desired and uplifting of activities. It always puts a smile on my face and gives me the energy to go take another crack at that pesky little bug.}
+%      	\resumeItem{Yoga}{Ever since I've been introduced to the art and science of Kriya Yoga my life has changed by order of magnitudes. It gives me profound clarity of thought and mind, and guides me in ways I can't explain. I highly recommend that you give it a shot if you haven't. You can thank me later.}
+%      	\resumeItem{Reading}{I read a lot. Like really, a lot. From books, articles, blogs, to technical documentation, a large part of my day in centered on reading. Two of my all-time favorite non-fiction books and a must read for everyone on earth are: The Sapiens and The Selfish Gene.}
+%      \resumeItemListEnd    
+% \resumeSubHeadingListEnd
 
 \end{document}
 
