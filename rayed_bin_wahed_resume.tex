@@ -52,6 +52,13 @@
   }
 }
 
+%\newcommand{\resumeItemNoDescription}[1]{
+%  \item\small{
+%    {#1 \vspace{-2pt}}
+%  }
+%}
+
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -82,118 +89,129 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Md Rayed Bin Wahed} 
-  & Email: \href{mailto:rayed.bin.wahed@g.bracu.ac.bd}{rayed.bin.wahed@g.bracu.ac.bd}
+  \href{https://rayedbinwahed.netlify.app/}{\textbf{\Large Md Rayed Bin Wahed}}
+& 
+%Email: 
+  \href{mailto:rayed.bin.wahed@g.bracu.ac.bd}{rayed.bin.wahed@g.bracu.ac.bd}
   \\
-  \href{https://www.linkedin.com/in/rayedbw}{https://www.linkedin.com/in/rayedbw} % {\faLinkedinSquare}
-  & Mobile: +880 1774-882517
+  \href{https://rayedbinwahed.netlify.app/}{https://rayedbinwahed.netlify.app/} % {\faLinkedinSquare}
+& 
+%Mobile: 
+  (+880) 1774-882517
   \\ 
-  \href{https://www.github.com/rayedbar}{https://www.github.com/rayedbar} % {\faGithub}
-  & Address: Uttara, Dhaka 1230, Bangladesh
+%  \href{https://www.github.com/rayedbar}{https://www.github.com/rayedbar} % {\faGithub}
+%  & Address: Uttara, Dhaka 1230, Bangladesh
 \end{tabular*}
 
 \begin{flushleft}
-
-Software engineer with substantial experience in developing SaaS applications and machine learning. An ambitious yet pragmatic team leader with a track record of implementing novel ideas. Humble and cheerful, a firm believer in using technology for a more equitable, ethical, and greener society.
-
-%Software engineer with noteworthy experience in web technologies and machine learning. A motivated yet grounded individual with a tremendous propensity to learn and implement, and an incessant drive to improve and innovate. A firm believer in using technology for a more equitable, ethical, and greener tomorrow.
-
-%Experienced software engineer with demonstrated skill in web technologies and machine learning.
-%Audacious, self-motivated individual with tremendous propensity to learn and implement. Incessant drive to improve and innovate. Demonstrated skill in web technologies and machine learning. Firm believer in using relevant skills for a more equitable, ethical, and greener tomorrow.
-
-% is exemplary as evidenced in numerous occasions. \enquote{Can't be done} is not his style because he beleives that if a problem is sufficiently dissected, its root cause can be made palpable and with research and innovation, a feasible solution can be engineered. He believes this to be the key requirement in any organization and that is the attitude that he aspires to bring everyday.
+	Software engineer experienced in Web \& Mobile application
+	development and in Machine Learning. Leading a team of engineers
+	to deliver innovative products and improve the Quality of Life
+	of our end customers.
 \end{flushleft}
 
 
 %-----------EXPERIENCE-----------------
-\section{Work Experience}
+\section{Experience}
 	\resumeSubHeadingListStart  
 	
 \resumeSubheading
       {Therap (BD) Ltd.}{Dhaka, Bangladesh}
       {Team Lead, Machine Learning}{Oct 2019 - Present}
-
-      	\begin{flushleft}
-			Therap (BD) Ltd. is a wholly-owned subsidiary of Therap Services LLC., USA. Therap is a web-based application suite designed to provide a comprehensive solution for the planning, documentation, reporting, and billing needs of organizations supporting people with Intellectual and Developmental Disabilities (IDD).
-      	\end{flushleft}      
-      
+      \begin{flushleft}
+%      	\begin{footnotesize}
+		Therap (BD) Ltd. is a wholly-owned subsidiary of \href{https://www.therapservices.net/}{ \textbf{Therap Services LLC., USA}}. Therap is a \href{https://www.hhs.gov/hipaa/index.html}{\textbf{HIPAA compliant}} web and mobile application suite designed to provide comprehensive solutions for the planning, documentation, reporting, and billing needs of organizations supporting people with Intellectual and Developmental Disabilities (IDD).      	
+%      	\end{footnotesize}
+      \end{flushleft}            
       \resumeItemListStart
-		\resumeItem{Pulse Oximetry}{Implemented a system to track blood oxygen saturation (SpO2) and heart rate of IDD individuals as an early detection mechanism for COVID-19. Saved the lives of 2 individuals so far.}
-		\resumeItem{Optical Character Recognition}{Leveraged OCR to extract SpO2 and heart-rate measurements from images of pulse oximeters. Eradicated false data entry.}
-		\resumeItem{Customer Retention}{Trained a classification model to predict the quarterly status of Therap customers. Developed a feature recommender system to facilitate greater discovery of services. Increased retention rate by 10\%.}
-		\resumeItem{Fall Detection}{Implemented an RNN model to detect accidental falls from gyroscope and accelerometer data. The system improved caregivers responsiveness by 80\%.}
-		\resumeItem{Face Recognition}{Implemented a face recognition model to identify and track unauthorized individuals from a live video feed. Improved on-premise security. The model had an accuracy of 97\%.}
-		\resumeItem{Sleep Analysis}{Utilized sensor readings from sleep mats, smartwatches, and smart-rings to implement comprehensive sleep profiles (sleep state diagrams, bed in/out statistics) of individuals. The intention was to inform caregivers of the quality of sleep the individuals.}		
+		\resumeItem{Pulse Oximetry Tracking}{
+		\begin{itemize}
+			\item Build a Progressive Web App using React, GraphQL, and AWS Amplify to track SpO2 and heart-rate of IDD individuals as an early detection mechanism of COVID-19.
+			\item Send real-time SMS and Email alerts to caregivers if readings reach dangerous levels.
+		\end{itemize}
+		}
+		\resumeItem{Face Recognition}{
+		\begin{itemize}
+			\item Train a Deep Learning model to recognize faces in videos.
+			\item Blur faces of individuals for whom the viewer does not have access (\href{https://www.hhs.gov/answers/hipaa/what-is-phi/index.html}{\textbf{PHI}} requirement).
+			\item The model has an accuracy of 98\%.
+		\end{itemize}
+		}
+		\resumeItem{Customer Retention}{
+		\begin{itemize}
+			\item Train a binary classification model to predict the likelihood of customers leaving Therap.
+			\item Use K-Means clustering algorithm to group customers and extract insight.
+			\item Implement a feature recommender system to allow greater discovery of services.
+		\end{itemize}
+		}
+				\resumeItem{Fall Detection}{
+		\begin{itemize}
+			\item Train an LSTM model to detect accidental falls from time-series gyroscope and accelerometer smartwatch data.
+			\item Paired with a real-time notification system, caregivers will be able to respond to injurious events 2x faster.
+		\end{itemize}
+		}
+		\resumeItem{Sleep Analysis}{
+		\begin{itemize}
+			\item Implement comprehensive sleep profiles of IDD individuals using sensor readings from IoT sleep mats.
+			\item Plot hypnograms, bed in/out statistics, heart and respiration rate diagrams.
+			\item Inform caregivers of the quality of sleep of patients.
+		\end{itemize}
+		}	
+		\resumeItem{Cloud Computing}{
+		\begin{itemize}
+			\item Build robust, scalable Machine Learning pipelines in the cloud.
+			\item Work with core AWS services such as SageMaker, Lambda, S3, EC2, DynamboDB, IAM, etc.
+			\item Build serverless workflows, microservices, and implement/consume REST and GraphQL APIs.
+		\end{itemize} 
+		}	
         \resumeItem{Related Technologies}
-          {Python, TensorFlow 2.0, Scikit-Learn, PyTorch, Numpy, Pandas, Matplotlib, Seaborn, Plotly, Docker, Jupyter Notebooks, React, GraphQL, AWS Amplify.}
+          {Python, TensorFlow 2.0, Scikit-Learn, Numpy, Pandas, Plotly, Jupyter Notebooks, Amazon Web Services (AWS), React, GraphQL, Apollo Client, Docker.}
       \resumeItemListEnd	
-	
     	\resumeSubheading
       		{Therap (BD) Ltd.}{Dhaka, Bangladesh}
       		{Full Stack Software Engineer}{Oct 2016 - Sep 2019}
-
       \resumeItemListStart
-         \resumeItem{Back-end}{Worked closely with engineering teams to understand product requirements, draw up design specifications, and implement core application features in Java using Spring MVC and Hibernate ORM.}
-        \resumeItem{Front-end}{Implemented interactive UI components in JavaScript. Reduced code clutter and improved site responsiveness by 20\%.}
-        \resumeItem{Database}{3+ years of experience with Oracle Database and MySQL. Wrote PL/SQL to migrate large volumes of data. Implemented indices for faster queries and optimization.}
-        \resumeItem{Deployment}{Extensive experience deploying applications in Oracle Weblogic Server. Used Gradle to build applications and manage dependencies.}
-        \resumeItem{API}{Proficient in implementing and consuming REST and GraphQL APIs. Considerable experience developing serverless applications using frontend libraries like React.}
-        \resumeItem{Related Technologies}{Node, Flask, Docker, NoSQL IntelliJ IDEA.}
-    \resumeItemListEnd			              
-  \resumeSubHeadingListEnd
+	      \resumeItem{Frontend}{
+	      	\begin{itemize}
+	      		\item Implemented interactive frontend components using HTML, CSS, JavaScript and the jQuery library.
+	      		\item Optimized client-side code and increased site repsonsiveness by 20\%.
+	      	\end{itemize}
+	      }
+      	 \resumeItem{Backend}{
+      	 	\begin{itemize}
+      	 		\item Collaborated with different teams and end users to understand product requirements and draw up design specifications.
+      	 		\item Implemented core application features using Java, Spring MVC and Hibernate ORM.
+      	 		\item Wrote unit and integration tests.
+      	 	\end{itemize}
+      	 }
+      	 \resumeItem{Databases}{
+      	 	\begin{itemize}
+      	 		\item Worked with Relational Database Management Systems such as Oracle Database and MySQL.
+      	 		\item Worked with NoSQL databases such as DynamoDB and Cloud Firestore.
+      	 		\item Wrote highly optimized queries to strore, retrieve large amounts of data.
+      	 	\end{itemize}
+      	 }      	       	  
+      	 \resumeItem{Deployment}{
+      	 	\begin{itemize}
+      	 		\item Deployed applications in a variety of servers and hosting environments such as Oracle Weblogic Server, Node.js, and Netlify.
+      	 		\item Leveraged build and dependency management tools such as Gradle, Maven, npm, and Yarn in all projects.                                                               
+      	 	\end{itemize}
+      	 
+      	 }
+    	\resumeItemListEnd
 
-%-----------Projects-----------------
-\section{Projects}
-	\resumeSubHeadingListStart
-		\resumeSubheading
+\resumeSubheading
 			{We Are X}{Dhaka, Bangladesh}
 			{Machine Learning Consultant (Contractual, Remote)}{Jan 2019 - Mar 2019}
 	\begin{flushleft}
 	Online social-media customer service platform for large enterprises.
 	\end{flushleft}
 			\resumeItemListStart
-				\resumeItem{Task}{Implemented a text classification model to classify customer queries written in Bengali and English. Achieved 90\% accuracy working on a limited dataset.}
-				\resumeItem{Outcome}{Improved customer service representative productivity by 30\% allowing We Are X to meet market demand keeping existing infrastructure intact.}
-		\resumeItemListEnd
-		 \resumeSubHeadingListEnd
-
-%-----------Certificates-----------------
-\section{Certificates}
-  \resumeSubHeadingListStart
-     \resumeSubheading
-     {Machine Learning Nanodegree}{Dhaka, Bangladesh}
-     {Udacity}{Nov 2019 - Jan 2020}
-     \resumeItemListStart
-      	\resumeItem{Certificate earned on January 30, 2020}{\href{https://graduation.udacity.com/confirm/9A9CA4SC}{Link to Certificate.}}
-      			\resumeItem{Project}{Implemented a Human Activity Recognition (HAR) LSTM deep learning model using WISDM Smartphone and Smartwatch Activity and Biometrics Dataset. Obtained an accuracy of 90\% using just the smartwatch data.}
-     \resumeItemListEnd 
-      \resumeSubheading
-      {Machine Learning with TensorFlow on Google Cloud Platform Specialization}{}
-      {Google Cloud Authorized Online Training}{}
-      \resumeItemListStart
-      	\resumeItem{End-to-End Machine Learning with TensorFlow on GCP by Google Cloud on Coursera. Certificate earned at Saturday, January 12, 2019 4:58 AM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/MHSW45J3MCHE}{Link to Certificate.}}
-		
-      	\resumeItem{Intro to TensorFlow by Google Cloud on Coursera. Certificate earned at Thursday, January 3, 2019 5:01 PM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/3ATYUGGV27PN}{Link to Certificate.}}
-      \resumeItemListEnd    
-
-  \resumeSubheading
-      {Deep Learning Specialization}{}
-      {Online Courses Taught by Professor Andrew Ng of Stanford Univsersity}{}
-      \resumeItemListStart
-      	\resumeItem{Deep Learning, a 5-course specialization by deeplearning.ai on Coursera. Specialization Certificate earned on April 9, 2018}{\href{https://www.coursera.org/account/accomplishments/specialization/XN5D4YXVX6BY}{Link to Certificate.}}
-      	
-      	\resumeItem{Sequence Models by deeplearning.ai on Coursera. Certificate earned at Monday, April 9, 2018 1:34 AM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/37F5JB396YKH}{Link to Certificate.}}
-
-		\resumeItem{Convolutional Neural Networks by deeplearning.ai on Coursera. Certificate earned at Saturday, March 10, 2018 4:36 PM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/5E8EY9ABTE97}{Link to Certificate.}}
-		
-		\resumeItem{Structuring Machine Learning Projects by deeplearning.ai on Coursera. Certificate earned at Monday, January 22, 2018 12:32 PM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/N92PV492N44B}{Link to Certificate.}}
-		
-		\resumeItem{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization by deeplearning.ai on Coursera. Certificate earned at Wednesday, January 17, 2018 5:16 PM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/JFWNYFRNUQZ7}{Link to Certificate.}}
-		
-		\resumeItem{Neural Networks and Deep Learning by deeplearning.ai on Coursera. Certificate earned at Friday, January 12, 2018 5:45 AM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/FY5MY44T8GE3}{Link to Certificate.}}		
-      \resumeItemListEnd         
-          
- \resumeSubHeadingListEnd
+				\resumeItem{Task}{Implemented a text classification model to classify customer queries written in Bengali and English into 5 categories.} 
+				\resumeItem{Outcome}{Improved customer service representative productivity by 3x.}
+		\resumeItemListEnd    
+    			              
+  \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -204,18 +222,32 @@ Software engineer with substantial experience in developing SaaS applications an
       \resumeItemListStart
       	\resumeItem{High Distinction}{Awarded High Distinction for a Cumulative Grade Point Average (CGPA) of 3.75/4.00.}
       	\resumeItem{Merit Based Scholarship}{Awarded Merit Based Scholarship for the duration of the entire program.}
-      	\resumeItem{Teacher Assistant}{Worked part-time as a TA for courses Data Structures and Discrete Mathematics starting junior year.}
-      \resumeItemListEnd    
+      	\resumeItem{Teaching Assistant}{Worked part-time as a TA for Data Structures and Discrete Mathematics.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+     {Machine Learning Nanodegree}{Dhaka, Bangladesh}
+     {Udacity}{Nov 2019 - Jan 2020}
+     \resumeItemListStart
+      	\resumeItem{Project}{Implemented a Human Activity Recognition (HAR) LSTM Deep Learning model using the WISDM Smartphone and Smartwatch Activity and Biometrics Dataset to classify 5 Activities of Daily Living.}
+      	\resumeItem{Outcome}{Obtained an accuracy of 90\% using only the smartwatch data.}
+     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------AWARDS AND HONORS-----------------
 \section{Awards and Honors}
   \resumeSubHeadingListStart
   \resumeSubheading
-      {President's Volunteer Service Award}{USA}
+      {President's Volunteer Service Award}{Washington D.C., USA}
       {President's Council on Service and Civic Participation}{Aug 2008}
       \resumeItemListStart
       	\resumeItem{Recognition}{Awarded President's Volunteer Service Award from the President's Council on Service and Civic Participation for outstanding service to community and country.}
+      \resumeItemListEnd 
+    \resumeSubheading
+      {YES Leadership Summit}{Colorado, USA}
+      {Sister Cities International}{Mar 2008}
+      \resumeItemListStart
+      	\resumeItem{Recognition}{Successfully completed the summit consisting of challenging and interactive activities designed to improve leadership skills. Applied those skills in a variety of physically and emotionally demanding situations.}
       \resumeItemListEnd 
     \resumeSubheading
       {Youth Exchange and Study (YES) Program}{Seattle, USA}
@@ -225,25 +257,70 @@ Software engineer with substantial experience in developing SaaS applications an
       \resumeItemListEnd 
            \resumeSubheading
       {International School Cricket Premier League}{Lucknow, India}
-      {ISCPL}{Jan 2011 }
+      {International Cricket Council}{Jan 2011 }
       \resumeItemListStart
       	\resumeItem{Recognition}{Represented Bangladesh as a cricketer in the first ever International School Cricket Premier League organized by City Montessori School \& Degree College and sponsored by the International Cricket Council (ICC).}
       \resumeItemListEnd 
   \resumeSubHeadingListEnd
+  
+\section{References}
+  \resumeSubHeadingListStart
+       \resumeSubheading
+      {Warren S. Gifford, Ph.D.}{}
+      {Co-author, Driving Tomorrow: Our Roadmap to Sustainable Transportation, Infrastructure and Cities}{}
+      \resumeItemListStart
+      	\resumeItem{Positions}{
+			\begin{itemize}
+				\item President Emeritus, Therap Services LLC.
+				\item Former Executive Director in Applied Research, Bell Communications Research
+				\item Former Head of Digital Network Planning Department, Bell Laboratories
+				\item Former Special Rapporteur for Digital Network Interfaces in Study Group XVIII in CCITT
+			\end{itemize}			      	
+      	}
+      	\resumeItem{Email}{ \href{mailto:warrensgifford@gmail.com}{warrensgifford@gmail.com}}
+      	\resumeItem{Mobile}{+1 732-673-1475}
+      \resumeItemListEnd    
+      
+     \resumeSubheading
+      {David L. Turock, Ph.D.}{}
+      {Director, Biometric Research Laboratory, Therap Services LLC.}{}
+      \resumeItemListStart
+      	\resumeItem{Email}{ \href{mailto:david.turock@therapservices.net}{david.turock@therapservices.net}}
+      	\resumeItem{Mobile}{+1 954-226-9333}
+      \resumeItemListEnd
+ \resumeSubHeadingListEnd
 
-%-------------------------------------------
-
-%\section{Hobbies and Interests}
+%-----------Certificates-----------------
+%\section{Certificates}
 %  \resumeSubHeadingListStart
-%      \resumeSubheading
-%      {Things that make me, me!}{}
-%      {When I'm not hacking away at code or ripping my hair off because of it, this is what I'm most likely doing}{}
+%       \resumeSubheading
+%      {Machine Learning with TensorFlow on Google Cloud Platform Specialization}{}
+%      {Google Cloud Authorized Online Training}{}
 %      \resumeItemListStart
-%      	\resumeItem{Music}{Playing a tune on my guitar is one of my most desired and uplifting of activities. It always puts a smile on my face and gives me the energy to go take another crack at that pesky little bug.}
-%      	\resumeItem{Yoga}{Ever since I've been introduced to the art and science of Kriya Yoga my life has changed by order of magnitudes. It gives me profound clarity of thought and mind, and guides me in ways I can't explain. I highly recommend that you give it a shot if you haven't. You can thank me later.}
-%      	\resumeItem{Reading}{I read a lot. Like really, a lot. From books, articles, blogs, to technical documentation, a large part of my day in centered on reading. Two of my all-time favorite non-fiction books and a must read for everyone on earth are: The Sapiens and The Selfish Gene.}
+%      	\resumeItem{End-to-End Machine Learning with TensorFlow on GCP by Google Cloud on Coursera. Certificate earned at Saturday, January 12, 2019 4:58 AM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/MHSW45J3MCHE}{Link to Certificate.}}
+%		
+%      	\resumeItem{Intro to TensorFlow by Google Cloud on Coursera. Certificate earned at Thursday, January 3, 2019 5:01 PM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/3ATYUGGV27PN}{Link to Certificate.}}
 %      \resumeItemListEnd    
+%      
+%  \resumeSubheading
+%      {Deep Learning Specialization}{}
+%      {Online Courses Taught by Professor Andrew Ng of Stanford Univsersity}{}
+%      \resumeItemListStart
+%      	\resumeItem{Deep Learning, a 5-course specialization by deeplearning.ai on Coursera. Specialization Certificate earned on April 9, 2018}{\href{https://www.coursera.org/account/accomplishments/specialization/XN5D4YXVX6BY}{Link to Certificate.}}
+%      	
+%      	\resumeItem{Sequence Models by deeplearning.ai on Coursera. Certificate earned at Monday, April 9, 2018 1:34 AM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/37F5JB396YKH}{Link to Certificate.}}
+%
+%		\resumeItem{Convolutional Neural Networks by deeplearning.ai on Coursera. Certificate earned at Saturday, March 10, 2018 4:36 PM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/5E8EY9ABTE97}{Link to Certificate.}}
+%		
+%		\resumeItem{Structuring Machine Learning Projects by deeplearning.ai on Coursera. Certificate earned at Monday, January 22, 2018 12:32 PM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/N92PV492N44B}{Link to Certificate.}}
+%		
+%		\resumeItem{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization by deeplearning.ai on Coursera. Certificate earned at Wednesday, January 17, 2018 5:16 PM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/JFWNYFRNUQZ7}{Link to Certificate.}}
+%		
+%		\resumeItem{Neural Networks and Deep Learning by deeplearning.ai on Coursera. Certificate earned at Friday, January 12, 2018 5:45 AM GMT}{\href{https://www.coursera.org/account/accomplishments/certificate/FY5MY44T8GE3}{Link to Certificate.}}		
+%      \resumeItemListEnd         
+%          
 % \resumeSubHeadingListEnd
+%-------------------------------------------
 
 \end{document}
 
